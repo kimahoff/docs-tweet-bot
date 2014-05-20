@@ -16,9 +16,6 @@ access_token = OAuth::Token.new(
     }
 status = contentsArray.sample
 
-# Note that the type of request has changed to POST.
-# The request parameters have also moved to the body
-# of the request instead of being put in the URL.
 baseurl = "https://api.twitter.com"
 path    = "/1.1/statuses/update.json"
 address = URI("#{baseurl}#{path}")
