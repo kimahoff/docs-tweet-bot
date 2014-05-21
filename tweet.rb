@@ -2,13 +2,6 @@ require 'rubygems'
 require 'oauth'
 require 'json'
 
-consumer_key = OAuth::Consumer.new(
-  'UzC20pPb1ryTjXMHxzo7YTC1D',
-  'qOGT560RqzpWrCKEqaURCFx9qD42Fkhk8PXnfSMieBp4BsDIoH')
-access_token = OAuth::Token.new(
-  '2511086658-sUCKVUmFPy5S1oPX0vXffsY9qdHfmC8QTWI918e',
-  'KYLIIS18B4PeeGEPCdQYP7DmxYAiR26Y8lOUPVsvTJ3gD')
-
 #Array of links (generated from sitemap)
   f = File.open("linklist.txt")
   contentsArray=[]  # start with an empty array
