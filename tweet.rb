@@ -9,13 +9,16 @@ access_token = OAuth::Token.new(
   '2511086658-sUCKVUmFPy5S1oPX0vXffsY9qdHfmC8QTWI918e',
   'KYLIIS18B4PeeGEPCdQYP7DmxYAiR26Y8lOUPVsvTJ3gD')
 
+#Array of links (generated from sitemap)
   f = File.open("linklist.txt")
   contentsArray=[]  # start with an empty array
     f.each_line {|line|
       contentsArray.push line
     }
+#Choose a random link
 status = contentsArray.sample
 
+#Tweet content
 baseurl = "https://api.twitter.com"
 path    = "/1.1/statuses/update.json"
 address = URI("#{baseurl}#{path}")
